@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Commute Carbon Tracker</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="app">
+
+            <header>
+                <h1>Commute Carbon</h1>
+            </header>
+            <section class="card hero">
+                <h2>Hello, Eco Rider!</h2>
+                <p>Track trips, save carbon, and stay motivated everyday.</p>
+            </section>
+            <section class="card form-card">
+                <h2>Log YOur Commute</h2>
+                <input type="text" id="name" placeholder="Your Name">
+                <input type="number" id="distance" placeholder="Distance in km">
+                <select id="mode">
+                    <option value="car">Car</option>
+                    <option value="car">Bus</option>
+                    <option value="car">Bike</option>
+                    <option value="car">Walk</option>
+                </select>
+                <button onclick="addTRip()">Add Trip</button>
+                <p id="message"></p>
+            </section>
+            <section class="stats">
+                <div class="card stat">
+                    <span>Total Trips</span>
+                    <strong id="trips">0</strong>
+                </div>
+                <div class="card stat">
+                    <span>CO2 Saved</span>
+                    <strong id="saved">0 kg</strong>
+                </div>
+                <div class="card stat">
+                    <span>Green Trips</span>
+                    <strong id="greenTrips">0</strong>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Recent Trips</h2>
+                <div id="logList"></div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
