@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background: linear-gradient(135deg, #f8f1e7, #e8d7c3, #d6bfa9);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 100%;
+    max-width: 430px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5c4033
+}
+
