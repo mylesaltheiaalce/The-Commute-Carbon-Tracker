@@ -45,3 +45,12 @@ header p {
     margin-bottom: 16px;
     border: 1px solid rgba(255, 255, 255, 4);
 }
+
+.hero {
+    background: linear-gradient(135deg, #c8a98d, #b08968);
+    color: #fff;
+}
+
+.hero h2 {
+    margin-bottom: 8px;
+}
