@@ -68,3 +68,11 @@ input, select {
     background: #fff;
     color: #5c4033;
 }
+
+button {
+    background: linear-gradient(135deg, #8b5e3c, #6f4e37);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
