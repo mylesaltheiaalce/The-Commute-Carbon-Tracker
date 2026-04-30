@@ -63,3 +63,8 @@ input, select, button {
     border-radius: 16px;
     font-size: 1rem;
 }
+
+input, select {
+    background: #fff;
+    color: #5c4033;
+}
