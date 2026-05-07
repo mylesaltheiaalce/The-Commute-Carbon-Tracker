@@ -86,3 +86,25 @@ button:hover {
     color: #6f4e37;
     font-weight: 600;
 }
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat span {
+    font-size: .8rem;
+    color: #7a5c4d;
+}
+
+.stat strong {
+    display: block;
+    font-size: 1.25rem;
+    color: #5c40333;
+    margin-top: 6px;
+}
