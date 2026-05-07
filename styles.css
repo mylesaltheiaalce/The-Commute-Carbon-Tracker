@@ -108,3 +108,16 @@ button:hover {
     color: #5c40333;
     margin-top: 6px;
 }
+
+.trip {
+    padding: 12px;
+    background: #fff;
+    border-radius: 16px;
+    margin-top: 10px;
+    color: #5c4033;
+}
+
+.trip small {
+    opacity: .7;
+}
+
