@@ -121,3 +121,8 @@ button:hover {
     opacity: .7;
 }
 
+@media(max-width: 500px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+}
