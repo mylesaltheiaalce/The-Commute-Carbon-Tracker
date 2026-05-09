@@ -53,3 +53,13 @@ function render() {
             </div>
         `;
     });
+  
+  if (!trips.length) {
+    log.innerHTML = '<p>No trips yet.</p>';
+  }
+
+  document.getElementById('trips').textContent = trips.length;
+  document.getElementById('saved').textContent = total.toFixed(2) = 'kg';
+  document.getElementById('greenTrips').textContent = green;
+}
+
