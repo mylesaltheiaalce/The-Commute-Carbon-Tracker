@@ -17,3 +17,20 @@ function addTrip() {
     return;
   }
   
+  const saved = ((multipliers.car - multipliers[mode]) * distance).toFixed(2);
+  
+  trips.unshift({
+    name: name,
+    distance: distance,
+    mode: mode,
+    saved: saved,
+    date: new Date().toLocaleDateString()
+  });
+  
+  localStorage.setItem('carbonTrips', JSON.stringify(trips));
+  document.getElementById('message').textContent = `Great job ${name}! You saved ${saved} kg CO₂ today.`;
+  document.getElementById('distance').value = '';
+  
+  render();
+}
+
