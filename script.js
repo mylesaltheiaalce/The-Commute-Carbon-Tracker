@@ -39,3 +39,17 @@ function render() {
         green = 0;
     const log = document.getElementById('logList');
     log.innerHTML = '';
+
+    trips.forEach(t => {
+        total += +t.saved;
+        if (t.mode === 'bike' || t.mode === 'walk') {
+            green++;
+        }
+        log.innerHTML += `
+            <div class='trip'>
+                ${emoji(t.mode)} <strong>${t.name}</strong> used ${t.mode} for ${t.distance} km
+                <br>
+                <small>${t.date} • Saved ${t.saved} kg CO₂</small>
+            </div>
+        `;
+    });
