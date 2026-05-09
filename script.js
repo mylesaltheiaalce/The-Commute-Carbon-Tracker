@@ -34,3 +34,8 @@ function addTrip() {
   render();
 }
 
+function render() {
+    let total = 0,
+        green = 0;
+    const log = document.getElementById('logList');
+    log.innerHTML = '';
