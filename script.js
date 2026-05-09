@@ -63,3 +63,13 @@ function render() {
   document.getElementById('greenTrips').textContent = green;
 }
 
+function emoji(m) {
+  return {
+    car: '🚗',
+    bus: '🚌',
+    bike: '🚲',
+    walk: '🚶‍♀️'
+  }[m];
+}
+
+render();
