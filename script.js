@@ -12,3 +12,8 @@ function addTrip() {
   const distance = parseFloat(document.getElementById('distance').value);
   const mode = document.getElementById('mode').value;
   
+  if (!distance || distance <= 0) {
+    document.getElementById('message').textContent = "⚠️ Please enter a valid distance!";
+    return;
+  }
+  
